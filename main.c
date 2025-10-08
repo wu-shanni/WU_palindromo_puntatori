@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(void) {
-    char vettore[100] = "i topi non avevano nipoti";
+    char vettore[100] = "pincopallino";
     char *start;
     char *end;
     char *l;
@@ -31,13 +31,13 @@ int main(void) {
 
     while (start < end) {
         if (*start != *end) {
-            printf("Non è palindroma");
+            printf("\n Non e' palindroma\n ");
             return 0;
         }
         start++;
         end--;
     }
 
-    printf("E' palindroma");
+    printf("\n E' palindroma\n ");
     return 0;
 }
